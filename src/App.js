@@ -1,7 +1,7 @@
 import React, {Component } from "react";
 import './App.css';
-import Navbar from "./layout/Navbar";
-
+import Navbar from "./components/layout/Navbar";
+import UserItem from "./components/users/UserItem";
 class App extends Component{
     foo = () => 'Have a good time!';
 
@@ -13,6 +13,7 @@ class App extends Component{
         return (
             <div className='App'>
                 <Navbar iconProp='fab fa-github'/>
+                <UserItem/>
                 {!booler ? <h4>booling</h4> :
                     <h1>Herrooo {!showName && name.toUpperCase()}</h1>
                 }
