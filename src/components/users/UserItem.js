@@ -1,16 +1,13 @@
 import React, {Component} from "react";
 
 class UserItem extends Component {
-    constructor() {
-        super();
-        console.log("try the constructor")
-        this.state = {
+    state = {
             id: 'id',
             login: 'userId',
             avatar_url: 'imahttps://th.bing.com/th/id/OIP.wxcvrOn64c-3AAh9xXU3uAHaC8?pid=ImgDet&rs=1ge',
             html_url: 'https://github.com/userId'
         }
-    }
+
 
     render() {
         return <div className='card text-center'>
